@@ -1,0 +1,15 @@
+.abalateral-container{
+    box-sizing: border-box;
+    border-radius: 16px 0 0 16px;
+    width: 42px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 6px;
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    background-image: linear-gradient(to bottom, var(--color-azulescuro), var(--color-azulclaro));
+    opacity: 0.8;
+}

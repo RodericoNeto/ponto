@@ -1,0 +1,31 @@
+.CardProjetoMob-container{
+    box-sizing: border-box;
+    width: 248px;
+    height: 248px;
+    /* border: solid 1px black; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.buttons-photos-container{
+    position: absolute;
+    /* border: solid 1px black; */
+    width: 60%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-littleball{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 2px gray;
+}
+
