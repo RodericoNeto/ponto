@@ -55,7 +55,8 @@
 
 .header-logo{
   width: 20vw;
-  color: var(--color-quasebranco240)
+  color: var(--color-quasebranco240);
+  margin-left: 24px;
 }
 
 
@@ -75,8 +76,9 @@
 
 .quemsomos-container{
   /* padding-top: 72px; */
-  border: 1px solid black;
-  height: 1200px;
+  /* border: 1px solid black; */
+  height: fit-content;
+  margin-bottom: -80px;
 }
 
 .quemsomos-banner{
@@ -107,7 +109,7 @@
 .quemsomos-descricao-title{
   box-sizing: border-box;
   font-family: var(--font-title);
-  color: var(--color-quasepreto40);
+  color: var(--color-azulescuro);
   margin-left: 0;
   /* border: solid 1px black; */
   text-align: start;
@@ -124,7 +126,7 @@
 }
 
 .quemsomos-descricao-texto{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   text-align: justify;
   font-family: var(--font-body);
   color: var(--color-quasepreto40);
@@ -133,22 +135,131 @@
 
 .quemsomos-descricao-title-icons{
   font-family: var(--font-title);
-  color: var(--color-quasepreto40);
-  font-size: 1.5rem;
+  color: var(--color-azulescuro);
+  font-size: 1.4rem;
+  margin-top: 28px;
+  margin-bottom: 8px;
 }
 
 
 .quemsomos-icons-container{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* ##### QUEM SOMOS - FIM ##### */
 /* ##### PROJETOS - INICIO ##### */
 .projetos-container{
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.projetos-title h3 {
+  font-family: var(--font-title);
+  color: var(--color-azulescuro);
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.projetos-title-line{
+  height: 1px;
+  width: 160%;
+  position: relative;
+  left: -30%;
+  background-image: linear-gradient(to right, 
+  rgba(0,0,0,0) 0%,
+  var(--color-azulescuro) 50%,
+  rgba(0,0,0,0) 100%);
+  /* background: linear-gradient(to right, 
+  rgba(0,0,0,0) 0%,
+  var(--color-azulescuro) 50%,
+  rgba(0,0,0,0) 100%,); */
+}
+
+.button-cta{
+  width: calc(100% - 96px);
+  margin-block: 48px;
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, var(--color-azulescuro) 0%, var(--color-azulclaro) 100% );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: var(--color-quasebranco240);
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  font-family: var(--font-title);
+}
+
+.button-cta:hover{
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.button-cta:active{
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
 /* ##### PROJETOS - FIM ##### */
+/* ##### CONTATO - INICIO ##### */
+
+.contato-container{
+  /* border: solid 1px red; */
+  background-color: var(--color-azulclaro);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--color-champagne);
+  font-family: var(--font-aux)
+}
+
+.contato-container a{
+  color: var(--color-champagne);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.contato-ponto-iconscontainer{
+  padding: 8px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72px;
+}
+
+.contato-ponto-iconscontainer a{
+  color: var(--color-champagne);
+}
+
+.contato-createdby-container{
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-azulescuro);
+}
+
+.contato-createdby-container p{
+  font-size: 1rem;
+}
+
+.contato-createdby-container a{
+  color: var(--color-azulescuro);
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+/* ##### CONTATO - FIM ##### */

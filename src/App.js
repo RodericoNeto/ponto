@@ -29,6 +29,7 @@ function App() {
       
       <div id="quemsomos"><QuemSomos/></div>
       <div id="projetos"><Projetos/></div>
+      <button className='button-cta'>Fale com a Ponto!</button>
       <div id="contato"><Contato/></div>
       <AbaContatoLateral/>
     </div>

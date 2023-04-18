@@ -53,8 +53,8 @@ export default function CardProjetoMobile(props) {
   return (
     <div className='CardProjetoMob-container'
     style={{backgroundImage: `url(${listImg[imgAtual]})`}}>
-      {/* <button onClick={prevImgStop}>1</button>
-      <button onClick={nextImgStop}>2</button> */}
+
+      <h4>{props.title}</h4>
 
       <div className='buttons-photos-container'>
         <button className='button-littleball' 

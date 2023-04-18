@@ -1,5 +1,5 @@
 .modalmenu-container-open{
-    border: solid 1px black;
+    /* border: solid 1px black; */
     height: 240px;
     width: 200px;
     padding-bottom: 32px;
@@ -25,6 +25,7 @@
     background-color: transparent;
     border: none;
     color: var(--color-quasepreto40);
+    font-weight: 100;
 }
 
 .modalmenu-container-closed{
@@ -34,6 +35,7 @@
 a{
     text-decoration: none;
     color: var(--color-quasepreto40);
+    font-family: var(--font-title);
 }
 
 /* ul{

@@ -1,0 +1,22 @@
+.iconeenome-container{
+    /* border: solid 1px red; */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.iconeenome-icone{
+    /* border: solid 1px red; */
+    color: var(--color-azulclaro);
+}
+
+.iconeenome-name{
+    font-size: 1rem;
+    font-family: var(--font-aux);
+    color: var(--color-azulescuro);
+    position: relative;
+    top: -4px;
+}
