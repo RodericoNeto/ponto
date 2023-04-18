@@ -1,4 +1,4 @@
-.CardProjetoMob-container{
+.CardProjetoMob-container-visible{
     box-sizing: border-box;
     width: calc(100% - 96px);
     height: calc(100vw - 96px);
@@ -8,14 +8,39 @@
     position: relative;
     margin-top: 16px;
     margin-bottom: 16px;
+    animation: appear 2000ms;
+    transition: 2000ms;
+    border-radius: 8px;
 }
 
-.CardProjetoMob-container h4{
+.CardProjetoMob-container-hidden{
+    box-sizing: border-box;
+    width: calc(100% - 96px);
+    height: calc(100vw - 96px);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+@keyframes appear {
+    0%{
+      transform: translateX(-200px);
+    }
+  
+    100%{
+      transform: translateX(0px);
+    }
+  }
+
+.CardProjetoMob-container-visible h4{
     padding-top: 8px;
     color: var(--color-champagne);
     font-family: var(--font-title);
-    font-size: 0.8rem;
-    text-shadow: rgba(160,160,160,0.9) 1px 1px 2px;
+    font-size: 0.9rem;
+    text-shadow: rgba(100,100,100,1) 1px 1px 2px;
 }
 
 .buttons-photos-container{

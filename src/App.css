@@ -216,7 +216,7 @@
 /* ##### CONTATO - INICIO ##### */
 
 .contato-container{
-  /* border: solid 1px red; */
+  margin-top: 16px;
   background-color: var(--color-azulclaro);
   padding-top: 24px;
   padding-bottom: 24px;
@@ -228,6 +228,7 @@
   color: var(--color-champagne);
   text-decoration: underline;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .contato-ponto-iconscontainer{
@@ -244,7 +245,7 @@
 }
 
 .contato-createdby-container{
-  padding-top: 24px;
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;

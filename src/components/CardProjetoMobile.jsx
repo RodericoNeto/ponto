@@ -1,7 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import './CardProjetoMobile.css'
 
 export default function CardProjetoMobile(props) {
+
+  const [isIntersecting, setIsIntersecting] = useState(true)
+
+  const cardRef = useRef()
+
+
+  useEffect(()=>{
+    const observer = new IntersectionObserver((entries)=>{
+      const entry = entries[0]
+      setIsIntersecting(entry.isIntersecting)
+    })
+    observer.observe(cardRef.current)
+  }, [])
 
   const img01 = props.imgCar01
   const img02 = props.imgCar02
@@ -17,7 +30,7 @@ export default function CardProjetoMobile(props) {
     if(stop === false){
       setTimeout(()=>{
               nextImg()
-            },3000)
+            },4000)
     }
   }, [imgAtual])
   
@@ -25,15 +38,6 @@ export default function CardProjetoMobile(props) {
     setImgAtual(imgAtual === (listImg.length -1) ? 0 : (imgAtual + 1))
   }
 
-  // const nextImgStop = ()=>{
-  //   setImgAtual(imgAtual === (listImg.length -1) ? 0 : (imgAtual + 1))
-  //   setStop(true)
-  // }
-
-  // const prevImgStop = ()=>{
-  //   setImgAtual(imgAtual === 0 ? (listImg.length -1) : (imgAtual -1))
-  //   setStop(true)
-  // }
 
   const putImg01 = () =>{
     setImgAtual(0)
@@ -51,7 +55,9 @@ export default function CardProjetoMobile(props) {
   }
 
   return (
-    <div className='CardProjetoMob-container'
+    <div ref={cardRef}
+    className={isIntersecting ? 'CardProjetoMob-container-visible' : 'CardProjetoMob-container-hidden'}
+    // className='CardProjetoMob-container-visible'
     style={{backgroundImage: `url(${listImg[imgAtual]})`}}>
 
       <h4>{props.title}</h4>
